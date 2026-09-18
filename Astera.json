@@ -486,14 +486,6 @@
         "userAdded": false
       },
       {
-        "file": "meteor2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "meteor2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/Explosion3.png",
         "kind": "image",
         "metadata": "",
@@ -764,14 +756,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/placeholderMeteor.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "placeholderMeteor",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "sfx button-setting2.mp3",
         "kind": "audio",
         "metadata": "",
@@ -926,7 +910,7 @@
       {
         "file": "assets/placeholderMeteor2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/placeholderMeteor2.png\"}",
         "name": "placeholderMeteor2",
         "smoothed": true,
         "userAdded": false
@@ -947,6 +931,160 @@
         "preloadAsMusic": true,
         "preloadAsSound": false,
         "preloadInCache": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tujuan.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Tujuan",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group270.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group270.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group269.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group269.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 267.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 267.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 266.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 266.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 270.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 270.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 271.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 271.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 272.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 272.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 273.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 273.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 277.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 277.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 276.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 276.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 275.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 275.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 274.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 274.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 281.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 281.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 280.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 280.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 279.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 279.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 278.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 278.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "sfx button-start(fix).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sfx button-start(fix).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ]
@@ -1684,7 +1822,25 @@
       }
     ]
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Stars",
+      "objects": [
+        {
+          "name": "Star1"
+        },
+        {
+          "name": "Star2"
+        },
+        {
+          "name": "Star3"
+        },
+        {
+          "name": "Star4"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "name": "temp",
@@ -1704,10 +1860,92 @@
           "children": []
         },
         {
-          "name": "LevelSekarang",
-          "persistentUuid": "47a8b9b8-348e-4c2f-8538-1aa214c4e02a",
-          "type": "number",
-          "value": 1
+          "folded": true,
+          "name": "LevelSelesai",
+          "persistentUuid": "24230332-632e-4e6a-ab3a-4e43702c3f31",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Bagi",
+              "persistentUuid": "1a96f784-bfc8-46b5-9607-919f3b016d74",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Level1",
+                  "persistentUuid": "39a62083-5f9c-453a-88d0-fef9bd6af6ba",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "Level2",
+                  "persistentUuid": "5bcfca9c-9449-46b7-91de-a6da460b616c",
+                  "type": "boolean",
+                  "value": false
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Kali",
+              "persistentUuid": "a5950e92-cdd7-4865-9a9b-bef87f177522",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Level1",
+                  "persistentUuid": "6ebbbc7a-6500-4570-90b7-3260b1cb53da",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "Level2",
+                  "persistentUuid": "29184f27-564f-4e10-bcb0-ee7c7ce59e2e",
+                  "type": "boolean",
+                  "value": false
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Kurang",
+              "persistentUuid": "cf209810-82ef-4dc2-ac32-7b45d0532aac",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Level1",
+                  "persistentUuid": "5ca2af04-905f-46d9-9501-54494436bbec",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "Level2",
+                  "persistentUuid": "f6054082-5b6e-4cf5-9941-04ac25d0eb4f",
+                  "type": "boolean",
+                  "value": false
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Tambah",
+              "persistentUuid": "97fe7a02-eb4a-4c94-a6e2-2aba1affc5ec",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Level1",
+                  "persistentUuid": "1afa0e49-cfe9-4f1f-ae9e-2cad5a78fdaa",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "Level2",
+                  "persistentUuid": "7c246ded-3e08-4285-9221-573924f2384a",
+                  "type": "boolean",
+                  "value": false
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Setelan",
@@ -1770,23 +2008,6 @@
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [
-        {
-          "name": "Stars",
-          "objects": [
-            {
-              "name": "Star1"
-            },
-            {
-              "name": "Star2"
-            },
-            {
-              "name": "Star3"
-            },
-            {
-              "name": "Star4"
-            }
-          ]
-        },
         {
           "name": "hiasanbg",
           "objects": [
@@ -3488,7 +3709,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Animation",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3953,7 +4173,7 @@
               },
               "parameters": [
                 "",
-                "sfx button-start.mp3",
+                "sfx button-start(fix).mp3",
                 "1",
                 "",
                 "",
@@ -4629,7 +4849,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "",
           "renderingType": "",
           "visibility": true,
@@ -4658,7 +4878,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "Dark Layer",
           "renderingType": "",
           "visibility": true,
@@ -4817,7 +5037,7 @@
           "value": ""
         },
         {
-          "name": "IsAnimate",
+          "name": "MasihAnimasi",
           "persistentUuid": "9d3d1619-908a-498f-94a1-e3ac269becfe",
           "type": "number",
           "value": 0
@@ -7562,7 +7782,7 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "IsAnimate",
+                        "MasihAnimasi",
                         "=",
                         "1"
                       ]
@@ -7912,7 +8132,7 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "IsAnimate",
+                        "MasihAnimasi",
                         "=",
                         "0"
                       ]
@@ -7927,7 +8147,7 @@
                         "value": "NumberVariable"
                       },
                       "parameters": [
-                        "IsAnimate",
+                        "MasihAnimasi",
                         "=",
                         "0"
                       ]
@@ -7978,6 +8198,7 @@
               "comment": ""
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8109,6 +8330,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8123,21 +8345,10 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "btnLevel",
-                    "Animation",
-                    "=",
-                    "\"lev2lock\""
-                  ]
-                }
-              ],
+              "actions": [],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -8151,21 +8362,68 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "btnLevel",
-                        "Animation",
-                        "=",
-                        "\"lev2_tambah\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Tambah.Level1",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev2lock\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Tambah.Level1",
+                            "True",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev2_tambah\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -8179,21 +8437,68 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "btnLevel",
-                        "Animation",
-                        "=",
-                        "\"lev2_kurang\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kurang.Level1",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev2lock\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kurang.Level1",
+                            "True",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev2_kurang\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -8207,21 +8512,68 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "btnLevel",
-                        "Animation",
-                        "=",
-                        "\"lev2_kali\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kali.Level1",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev2lock\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kali.Level1",
+                            "True",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev2_kali\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -8235,16 +8587,62 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "btnLevel",
-                        "Animation",
-                        "=",
-                        "\"lev2_bagi\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Bagi.Level1",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev2lock\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Bagi.Level1",
+                            "True",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev2_bagi\""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -8266,19 +8664,7 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "btnLevel",
-                    "Animation",
-                    "=",
-                    "\"lev3lock\""
-                  ]
-                }
-              ],
+              "actions": [],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -8294,21 +8680,68 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "btnLevel",
-                        "Animation",
-                        "=",
-                        "\"lev3_tambah\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Tambah.Level2",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev3lock\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Tambah.Level2",
+                            "True",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev3_tambah\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -8322,21 +8755,68 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "btnLevel",
-                        "Animation",
-                        "=",
-                        "\"lev3_kurang\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kurang.Level2",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev3lock\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kurang.Level2",
+                            "True",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev3_kurang\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -8350,21 +8830,68 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "btnLevel",
-                        "Animation",
-                        "=",
-                        "\"lev3_kali\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kali.Level2",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev3lock\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kali.Level2",
+                            "True",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev3_kali\""
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -8378,16 +8905,62 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "btnLevel",
-                        "Animation",
-                        "=",
-                        "\"lev3_bagi\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Bagi.Level2",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev3lock\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Bagi.Level2",
+                            "True",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "btnLevel",
+                            "Animation",
+                            "=",
+                            "\"lev3_bagi\""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -10499,7 +11072,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.47893418845352564,
+        "zoomFactor": 0.43357743047023833,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -10510,7 +11083,7 @@
           "name": "Waktu",
           "persistentUuid": "e3cd5b58-a9c4-4d96-b3fe-aaa35cf19f9a",
           "type": "number",
-          "value": 60
+          "value": 0
         },
         {
           "name": "JumlahMeteorLevel",
@@ -10583,6 +11156,17 @@
           "persistentUuid": "5bed8724-0821-49af-9dfb-bf70bef893ac",
           "type": "number",
           "value": 1
+        },
+        {
+          "name": "BolehNembak",
+          "persistentUuid": "1e9fc005-8410-4ace-922d-3255e6ee7577",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "JawabanBenar",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -10595,7 +11179,7 @@
           "name": "txtTimer",
           "persistentUuid": "250815c4-59bd-460a-bb2a-20946a5bf1e9",
           "width": 0,
-          "x": 1129,
+          "x": 1194.5,
           "y": 20,
           "zOrder": 5,
           "numberProperties": [],
@@ -10720,11 +11304,11 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "UI",
           "name": "txtQuestions",
           "persistentUuid": "0b40164b-9388-48cf-9796-597af41c7446",
           "width": 0,
-          "x": 541,
+          "x": 548.5,
           "y": 20,
           "zOrder": 17,
           "numberProperties": [],
@@ -10736,13 +11320,174 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "UI",
           "name": "txtSkor",
           "persistentUuid": "7d9a04bf-36f6-4625-807d-199c4a1bf26c",
           "width": 0,
           "x": 23,
           "y": 20,
           "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Tujuan",
+          "persistentUuid": "f0891fe7-9a43-4549-afd1-5ad9363f841b",
+          "width": 0,
+          "x": 580.5,
+          "y": -238,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Tujuan",
+          "persistentUuid": "dfc7a11d-d8fd-40c4-b2b3-b36e31091a52",
+          "width": 0,
+          "x": 580.5,
+          "y": 839,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 59,
+          "layer": "UI",
+          "name": "Icon_Timer",
+          "persistentUuid": "34f59f6c-fed0-417b-acea-826af5f11e56",
+          "width": 52,
+          "x": 1136,
+          "y": 5,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Star1",
+          "persistentUuid": "2a37ed3a-6a20-4b14-bbb4-9a5b08c2924a",
+          "width": 0,
+          "x": 160,
+          "y": 40,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Star2",
+          "persistentUuid": "f5ba179c-42d0-448a-b04e-30bca448f317",
+          "width": 0,
+          "x": 625,
+          "y": 180,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Star3",
+          "persistentUuid": "ff1e3fe3-ff61-4999-892f-5ea049360e9e",
+          "width": 0,
+          "x": 270,
+          "y": 50,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Star4",
+          "persistentUuid": "752296a6-dfd4-477f-aa1e-84d2bac80361",
+          "width": 0,
+          "x": 3,
+          "y": 85,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 135,
+          "customSize": false,
+          "height": 321,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Star2",
+          "persistentUuid": "66a559d2-d36c-45e8-aa4f-89925d6d935f",
+          "width": 348,
+          "x": 385,
+          "y": 491,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": false,
+          "flippedX": true,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Star3",
+          "persistentUuid": "08a64604-8687-4412-8518-fba605869778",
+          "width": 0,
+          "x": 114,
+          "y": 262,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "HP",
+          "persistentUuid": "7bd2fa0f-5ab0-42e8-9346-30040b01cf0e",
+          "width": 0,
+          "x": 557,
+          "y": 631,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10894,175 +11639,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "plnt-kdp (2).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
                       "image": "plnt-kdp (1).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "plnt-kdp (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11159,90 +11736,6 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Planet Merah2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "plnt-kdp (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11434,175 +11927,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 259.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
                       "image": "Group 262.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 259.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11699,90 +12024,6 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group 263.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 259.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11974,175 +12215,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 258.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
                       "image": "plnt-kdp (5).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 258.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12239,90 +12312,6 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group 264.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Group 258.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12514,175 +12503,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "plnt-kdp (8).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
                       "image": "plnt-kdp (7).png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "plnt-kdp (8).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12779,90 +12600,6 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group 265.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 57.5,
-                            "y": 469
-                          },
-                          {
-                            "x": 26.5,
-                            "y": 335
-                          },
-                          {
-                            "x": 48,
-                            "y": 230
-                          },
-                          {
-                            "x": 103,
-                            "y": 131.5
-                          },
-                          {
-                            "x": 200.5,
-                            "y": 60
-                          },
-                          {
-                            "x": 328,
-                            "y": 30
-                          },
-                          {
-                            "x": 447,
-                            "y": 51.5
-                          },
-                          {
-                            "x": 556.5,
-                            "y": 128
-                          },
-                          {
-                            "x": 616.5,
-                            "y": 225.5
-                          },
-                          {
-                            "x": 637.5,
-                            "y": 336
-                          },
-                          {
-                            "x": 610,
-                            "y": 467
-                          },
-                          {
-                            "x": 536.5,
-                            "y": 568
-                          },
-                          {
-                            "x": 442.5,
-                            "y": 625
-                          },
-                          {
-                            "x": 326,
-                            "y": 648.5
-                          },
-                          {
-                            "x": 213.5,
-                            "y": 620.5
-                          },
-                          {
-                            "x": 117,
-                            "y": 558.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "plnt-kdp (8).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -13086,21 +12823,21 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Waktu: 00.00",
+          "string": "00.00",
           "font": "FredokaOne-Regular.ttf",
           "textAlignment": "left",
           "characterSize": 20,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
             "isOutlineEnabled": true,
             "isShadowEnabled": false,
             "italic": false,
-            "outlineColor": "255;255;255",
+            "outlineColor": "255;122;36",
             "outlineThickness": 3,
             "shadowAngle": 90,
             "shadowBlurRadius": 2,
@@ -13109,13 +12846,13 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Waktu: 00.00",
+            "text": "00.00",
             "font": "FredokaOne-Regular.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
             "characterSize": 20,
             "lineHeight": 0,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         {
@@ -13666,16 +13403,16 @@
           "textAlignment": "left",
           "characterSize": 20,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
             "isOutlineEnabled": true,
             "isShadowEnabled": false,
             "italic": false,
-            "outlineColor": "255;255;255",
+            "outlineColor": "255;122;36",
             "outlineThickness": 3,
             "shadowAngle": 90,
             "shadowBlurRadius": 2,
@@ -13690,8 +13427,912 @@
             "verticalTextAlignment": "top",
             "characterSize": 20,
             "lineHeight": 0,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Tujuan",
+          "persistentUuid": "9a0bb101-8825-4a11-9635-d3b654b3d62a",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Tujuan",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Tujuan",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 119,
+                            "y": 0
+                          },
+                          {
+                            "x": 119,
+                            "y": 119
+                          },
+                          {
+                            "x": 0,
+                            "y": 119
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Icon_Timer",
+          "persistentUuid": "5528fe19-8732-4bc6-9e4e-f8d05dbad05f",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 11,
+                            "y": 13
+                          },
+                          {
+                            "x": 67,
+                            "y": 13
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 11,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "HP",
+          "persistentUuid": "a569d7a8-c837-4e8b-abfb-0b60c1d26cd3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "tambah-3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group270.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "tambah-2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group269.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "tambah-1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 267.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "tambah-0",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 266.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "kurang-3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 273.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "kurang-2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 272.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "kurang-1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 271.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "kurang-0",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 270.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "kali-3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 278.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "kali-2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 279.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "kali-1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 280.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "kali-0",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 281.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bagi-3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 274.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bagi-2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 275.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bagi-1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 276.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "bagi-0",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 277.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 15,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 15
+                          },
+                          {
+                            "x": 151,
+                            "y": 53
+                          },
+                          {
+                            "x": 15,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -13732,6 +14373,15 @@
           },
           {
             "objectName": "placeholderMeteor"
+          },
+          {
+            "objectName": "Tujuan"
+          },
+          {
+            "objectName": "Icon_Timer"
+          },
+          {
+            "objectName": "HP"
           }
         ]
       },
@@ -13852,6 +14502,17 @@
                 "Meteor",
                 "DestroyOutside",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HP",
+                "Animation",
+                "=",
+                "JenisOperasi+\"-\"+ToString(Nyawa)"
               ]
             }
           ],
@@ -14186,6 +14847,27 @@
                     "=",
                     "GlobalVariable(GameStorage.GameData[GlobalVariableString(JenisOperasi)][GlobalVariableString(SubLevel)].semuapertanyaan[Variable(IndeksPertanyaan[Variable(Counter)])].jawaban)"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "BolehNembak",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Planet",
+                    "Animation",
+                    "=",
+                    "JenisOperasi"
+                  ]
                 }
               ],
               "events": [
@@ -14395,12 +15077,36 @@
                 },
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "BolehNembak",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "Planet",
+                    "Tween",
+                    "\"Shooting\"",
+                    "300",
+                    "\"easeInOutQuint\"",
+                    "1",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundOnChannel"
@@ -14412,6 +15118,16 @@
                     "",
                     "",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "BolehNembak",
+                    "=",
+                    "0"
                   ]
                 },
                 {
@@ -14428,6 +15144,16 @@
                 },
                 {
                   "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "EnergyBall",
+                    "=",
+                    "Planet.ZOrder() - 1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectAngleTween2"
                   },
                   "parameters": [
@@ -14436,7 +15162,7 @@
                     "\"Shooting\"",
                     "Planet.AngleToObject(Meteor)",
                     "\"easeInOutSine\"",
-                    "0.1",
+                    "0.25",
                     ""
                   ]
                 },
@@ -14597,7 +15323,36 @@
                   "parameters": []
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "Planet",
+                    "Tween",
+                    "\"!Shooting\"",
+                    "330",
+                    "\"easeInOutQuint\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+                  },
+                  "parameters": [
+                    "Planet",
+                    "Tween",
+                    "\"!Shooting\"",
+                    "0",
+                    "\"easeInOutSine\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -14612,7 +15367,6 @@
               "comment": "Jawaban Benar"
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -14646,6 +15400,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "JawabanBenar",
+                    "+",
+                    "1"
+                  ]
+                },
                 {
                   "type": {
                     "value": "LinkedObjects::PickObjectsLinkedTo"
@@ -14732,28 +15496,12 @@
                 },
                 {
                   "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.7"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
                     "StatusGame",
                     "=",
                     "\"meluncur\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.6"
                   ]
                 },
                 {
@@ -14771,7 +15519,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "0.5"
+                    "1.5"
                   ]
                 },
                 {
@@ -14782,35 +15530,6 @@
                     "PicuSoalBaru",
                     "=",
                     "1"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "Counter",
-                        ">=",
-                        "TotalSoalDimainkan"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Win Screen\"",
-                        ""
-                      ]
-                    }
                   ]
                 }
               ]
@@ -14863,6 +15582,26 @@
               "actions": [
                 {
                   "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "txtOptions",
+                    "Meteor",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "txtOptions",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Create"
                   },
                   "parameters": [
@@ -14884,6 +15623,15 @@
                 },
                 {
                   "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Meteor",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySoundOnChannel"
                   },
                   "parameters": [
@@ -14897,20 +15645,22 @@
                 },
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Nyawa",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
                     "StatusGame",
                     "=",
                     "\"meluncur\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.6"
                   ]
                 },
                 {
@@ -14928,7 +15678,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "0.5"
+                    "1.5"
                   ]
                 },
                 {
@@ -14940,81 +15690,6 @@
                     "=",
                     "1"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Meteor",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "txtOptions",
-                    ""
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "Waktu",
-                            "<=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "Nyawa",
-                            "<=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "Counter",
-                            ">=",
-                            "TotalSoalDimainkan"
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Lose Screen\"",
-                        ""
-                      ]
-                    }
-                  ]
                 }
               ]
             },
@@ -15023,6 +15698,61 @@
               "conditions": [],
               "actions": [],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Meteor",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Meteor",
+                        "ID",
+                        "!=",
+                        "JawabanBenarID"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PickRandomInstance"
+                      },
+                      "parameters": [
+                        "",
+                        "Tujuan"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Meteor",
+                        "Meteor.AngleToObject(Tujuan)",
+                        "500",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -15056,143 +15786,8 @@
                       "parameters": [
                         "Meteor",
                         "Meteor.AngleToObject(Planet)",
-                        "80",
+                        "30",
                         "1"
-                      ]
-                    }
-                  ],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "LinkedObjects::PickObjectsLinkedTo"
-                          },
-                          "parameters": [
-                            "",
-                            "txtOptions",
-                            "Meteor",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "Meteor",
-                            ">=",
-                            "1380"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "txtOptions",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Meteor",
-                            ""
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "StatusGame",
-                        "=",
-                        "\"meluncur\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "Meteor",
-                        "ID",
-                        "!=",
-                        "JawabanBenarID"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "Meteor",
-                        "Meteor.AngleToObject(Planet) + 180",
-                        "80",
-                        "1"
-                      ]
-                    }
-                  ],
-                  "events": [
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "LinkedObjects::PickObjectsLinkedTo"
-                          },
-                          "parameters": [
-                            "",
-                            "txtOptions",
-                            "Meteor",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "Meteor",
-                            ">=",
-                            "1380"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "txtOptions",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "Meteor",
-                            ""
-                          ]
-                        }
                       ]
                     }
                   ]
@@ -15200,7 +15795,60 @@
               ]
             },
             {
-              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Meteor",
+                    "Tujuan",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "txtOptions",
+                    "Meteor",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "txtOptions",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Meteor",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -15276,119 +15924,247 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Planet",
+                    "Animation",
+                    "=",
+                    "JenisOperasi+\"sakit\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "HP",
+                    "Animation",
+                    "=",
+                    "JenisOperasi+\"-\"+ToString(Nyawa)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Counter",
+                    ">=",
+                    "TotalSoalDimainkan"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "JawabanBenar",
+                    ">=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "Meteor",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Shadow",
+                    "Tween",
+                    "\"End\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Counter",
+                    ">=",
+                    "TotalSoalDimainkan"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "JawabanBenar",
+                    ">=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Shadow",
+                    "Tween",
+                    "\"End\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Win Screen\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
                     {
                       "type": {
-                        "value": "StringVariable"
+                        "value": "NumberVariable"
                       },
                       "parameters": [
-                        "JenisOperasi",
-                        "=",
-                        "\"kurang\""
+                        "Waktu",
+                        "<=",
+                        "0"
                       ]
-                    }
-                  ],
-                  "actions": [
+                    },
                     {
                       "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                        "value": "NumberVariable"
                       },
                       "parameters": [
-                        "Planet",
-                        "Animation",
-                        "=",
-                        "\"tambahsakit\""
+                        "Nyawa",
+                        "<=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "Counter",
+                            ">=",
+                            "TotalSoalDimainkan"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "JawabanBenar",
+                            "<",
+                            "3"
+                          ]
+                        }
                       ]
                     }
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "JenisOperasi",
-                        "=",
-                        "\"kurang\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Planet",
-                        "Animation",
-                        "=",
-                        "\"kurangsakit\""
-                      ]
-                    }
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Shadow",
+                    "Tween",
+                    "\"End\""
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "JenisOperasi",
-                        "=",
-                        "\"kali\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Planet",
-                        "Animation",
-                        "=",
-                        "\"kalisakit\""
-                      ]
-                    }
-                  ]
-                },
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "StringVariable"
-                      },
-                      "parameters": [
-                        "JenisOperasi",
-                        "=",
-                        "\"bagi\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Planet",
-                        "Animation",
-                        "=",
-                        "\"bagisakit\""
-                      ]
-                    }
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Lose Screen\"",
+                    ""
                   ]
                 }
               ]
@@ -15401,6 +16177,276 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
+          "name": "Stars",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "Star1",
+                    "Opacity",
+                    "=",
+                    "100"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Star1",
+                    "Tween",
+                    "\"FadeOut\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "2.5",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "Star1",
+                    "Opacity",
+                    "=",
+                    "255"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Star1",
+                    "Tween",
+                    "\"FadeIn\"",
+                    "100",
+                    "\"easeInQuad\"",
+                    "1.4",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "Star2",
+                    "Opacity",
+                    "=",
+                    "255"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Star2",
+                    "Tween",
+                    "\"FadeOut\"",
+                    "100",
+                    "\"easeOutQuad\"",
+                    "2.2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "Star2",
+                    "Opacity",
+                    "=",
+                    "100"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Star2",
+                    "Tween",
+                    "\"FadeIn\"",
+                    "255",
+                    "\"easeInQuad\"",
+                    "1.6",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "Star3",
+                    "Opacity",
+                    "=",
+                    "100"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Star3",
+                    "Tween",
+                    "\"FadeOut\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "Star3",
+                    "Opacity",
+                    "=",
+                    "255"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Star3",
+                    "Tween",
+                    "\"FadeIn\"",
+                    "100",
+                    "\"easeInQuad\"",
+                    "1.8",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "Star4",
+                    "Opacity",
+                    "=",
+                    "255"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Star4",
+                    "Tween",
+                    "\"FadeOut\"",
+                    "100",
+                    "\"easeOutQuad\"",
+                    "1.8",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "Star4",
+                    "Opacity",
+                    "=",
+                    "100"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Star4",
+                    "Tween",
+                    "\"FadeIn\"",
+                    "255",
+                    "\"easeInQuad\"",
+                    "2",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
           "name": "Timer",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -15417,7 +16463,7 @@
                     "txtTimer",
                     "Text",
                     "=",
-                    "\"Waktu: \" + TimeFormatter::SecondsToHHMMSS(Waktu)"
+                    "TimeFormatter::SecondsToHHMMSS(Waktu)"
                   ]
                 }
               ]
@@ -16015,7 +17061,23 @@
       "stopSoundsOnStartup": true,
       "title": "",
       "v": 249,
-      "uiSettings": {},
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      },
       "objectsGroups": [],
       "variables": [],
       "instances": [],
@@ -16140,10 +17202,43 @@
       "stopSoundsOnStartup": true,
       "title": "",
       "v": 249,
-      "uiSettings": {},
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Dark",
+          "persistentUuid": "049a74e6-9555-4b84-89c1-523d1fb5b350",
+          "width": 0,
+          "x": 16,
+          "y": 69,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [],
       "objectsFolderStructure": {
         "folderName": "__ROOT"
