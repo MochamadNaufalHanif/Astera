@@ -17004,7 +17004,7 @@
               "parameters": [
                 "btnMenu",
                 "ButtonFSM",
-                ""
+                "yes"
               ]
             }
           ],
@@ -23112,8 +23112,8 @@
           "name": "Tujuan",
           "persistentUuid": "f0891fe7-9a43-4549-afd1-5ad9363f841b",
           "width": 99,
-          "x": 580.5,
-          "y": -189,
+          "x": 1080,
+          "y": -198,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -23129,8 +23129,8 @@
           "name": "Tujuan",
           "persistentUuid": "dfc7a11d-d8fd-40c4-b2b3-b36e31091a52",
           "width": 99,
-          "x": 580.5,
-          "y": 819,
+          "x": 1080,
+          "y": 865,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -23586,6 +23586,40 @@
           "x": 20,
           "y": 745,
           "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 99,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Tujuan",
+          "persistentUuid": "35dab157-67fc-4898-9082-780b34208da2",
+          "width": 99,
+          "x": 20,
+          "y": 865,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 99,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Tujuan",
+          "persistentUuid": "fa6fe332-5652-4ad0-829c-8d4602b09826",
+          "width": 99,
+          "x": 20,
+          "y": -198,
+          "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -27392,26 +27426,6 @@
                 "btnLanjut",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "btnLanjut",
-                "ButtonFSM",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "btnMenu",
-                "ButtonFSM",
-                ""
-              ]
             }
           ],
           "events": [
@@ -29752,29 +29766,74 @@
                     },
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Once"
+                        "value": "PosY"
                       },
-                      "parameters": []
+                      "parameters": [
+                        "Meteor",
+                        ">",
+                        "300"
+                      ]
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "PickRandomInstance"
-                      },
-                      "parameters": [
-                        "",
-                        "Tujuan"
-                      ]
-                    },
                     {
                       "type": {
                         "value": "AddForceAL"
                       },
                       "parameters": [
                         "Meteor",
-                        "Meteor.AngleToObject(Tujuan)",
-                        "500",
+                        "90",
+                        "30",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Meteor",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Meteor",
+                        "ID",
+                        "!=",
+                        "JawabanBenarID"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "Meteor",
+                        "<",
+                        "300"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Meteor",
+                        "270",
+                        "30",
                         "1"
                       ]
                     }
@@ -29907,7 +29966,7 @@
                     "hit4.mp3",
                     "1",
                     "",
-                    "",
+                    "GameStorage.Setelan[1]",
                     ""
                   ]
                 },
@@ -30192,24 +30251,6 @@
                 },
                 {
                   "type": {
-                    "value": "Layer"
-                  },
-                  "parameters": [
-                    "btnLanjut",
-                    "\"GameOver\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Layer"
-                  },
-                  "parameters": [
-                    "btnMenu",
-                    "\"GameOver\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SceneInstancesCount"
                   },
                   "parameters": [
@@ -30279,13 +30320,13 @@
                 },
                 {
                   "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
                     "Planet",
                     "Tween",
                     "\"GameOver\"",
-                    "-600",
+                    "0",
                     "\"easeInOutSine\"",
                     "1",
                     ""
@@ -30328,7 +30369,7 @@
                     "Tween",
                     "\"GameOver\"",
                     "-90",
-                    "\"bouncePast\"",
+                    "\"easeInOutSine\"",
                     "1",
                     ""
                   ]
@@ -30900,7 +30941,7 @@
                             "value": "SetNumberVariable"
                           },
                           "parameters": [
-                            "GameStorage.LevelSelesai.Bagi.Level2",
+                            "GameStorage.LevelSelesai.Kali.Level2",
                             "=",
                             "1"
                           ]
@@ -30937,7 +30978,7 @@
                             "value": "SetNumberVariable"
                           },
                           "parameters": [
-                            "GameStorage.LevelSelesai.Kali.Level2",
+                            "GameStorage.LevelSelesai.Bagi.Level2",
                             "=",
                             "1"
                           ]
@@ -31043,16 +31084,6 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "btnMenu",
-                    "ButtonFSM",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
                     "btnLanjut",
                     "ButtonFSM",
                     ""
@@ -31064,6 +31095,16 @@
                   },
                   "parameters": [
                     "btnUlang",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
                     "ButtonFSM",
                     ""
                   ]
@@ -37882,27 +37923,7 @@
                 "value": "Show"
               },
               "parameters": [
-                "btnLanjut",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "btnLanjut",
-                "ButtonFSM",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
                 "btnMenu",
-                "ButtonFSM",
                 ""
               ]
             }
@@ -38586,6 +38607,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Repeat",
                   "repeatExpression": "Variable(JumlahMeteorLevel)",
                   "conditions": [
@@ -39016,6 +39038,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -39330,6 +39353,7 @@
               "comment": "Jawaban Benar"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -40344,12 +40368,6 @@
                         "!=",
                         "JawabanBenarID"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
                     }
                   ],
                   "actions": [],
@@ -40376,7 +40394,7 @@
                           "parameters": [
                             "Meteor",
                             "90",
-                            "500",
+                            "30",
                             "1"
                           ]
                         }
@@ -40404,7 +40422,7 @@
                           "parameters": [
                             "Meteor",
                             "270",
-                            "500",
+                            "30",
                             "1"
                           ]
                         }
@@ -40827,15 +40845,6 @@
                     "value": "Layer"
                   },
                   "parameters": [
-                    "btnLanjut",
-                    "\"GameOver\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Layer"
-                  },
-                  "parameters": [
                     "btnMenu",
                     "\"GameOver\""
                   ]
@@ -40911,13 +40920,13 @@
                 },
                 {
                   "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
                     "Planet",
                     "Tween",
                     "\"GameOver\"",
-                    "-600",
+                    "0",
                     "\"easeInOutSine\"",
                     "1",
                     ""
@@ -41349,7 +41358,7 @@
                         "value": "Hide"
                       },
                       "parameters": [
-                        "btnLanjut"
+                        "btnMenu"
                       ]
                     },
                     {
@@ -41357,7 +41366,7 @@
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
-                        "btnLanjut",
+                        "btnMenu",
                         "ButtonFSM",
                         ""
                       ]
@@ -41412,7 +41421,7 @@
                         "value": "Show"
                       },
                       "parameters": [
-                        "btnLanjut",
+                        "btnMenu",
                         ""
                       ]
                     },
@@ -41421,7 +41430,7 @@
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
-                        "btnLanjut",
+                        "btnMenu",
                         "ButtonFSM",
                         "yes"
                       ]
