@@ -13,7 +13,7 @@
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "default",
-    "packageName": "com.example.gamename",
+    "packageName": "com.trikala.astera",
     "pixelsRounding": false,
     "projectUuid": "807ac3ac-b7ab-49bb-800b-4386797726e6",
     "scaleMode": "linear",
@@ -25,7 +25,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "C:\\Users\\Naufal\\Desktop\\Tugas Sekolah\\Game V.2\\Desktop",
+    "latestCompilationDirectory": "C:\\Users\\Naufal\\Desktop\\Tugas Sekolah\\Game V.2\\Web App",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -682,16 +682,6 @@
         "userAdded": false
       },
       {
-        "file": "bgm main-menu.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "bgm main-menu.mp3",
-        "preloadAsMusic": true,
-        "preloadAsSound": false,
-        "preloadInCache": true,
-        "userAdded": false
-      },
-      {
         "file": "sfx button-setting2.mp3",
         "kind": "audio",
         "metadata": "",
@@ -739,38 +729,6 @@
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": true,
-        "userAdded": false
-      },
-      {
-        "file": "Vector-3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Vector-3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Vector (2).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Vector (2).png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Vector (1).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Vector (1).png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Vector4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Vector4.png",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -1438,38 +1396,6 @@
         "userAdded": false
       },
       {
-        "file": "Group 378.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group 378.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Group 1666.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group 1666.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Group 165.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group 165.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Group 164.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Group 164.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "sfx timer.mp3",
         "kind": "audio",
         "metadata": "",
@@ -1512,14 +1438,6 @@
         "userAdded": false
       },
       {
-        "file": "set2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "set2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "set3.png",
         "kind": "image",
         "metadata": "",
@@ -1553,6 +1471,26 @@
         "metadata": "",
         "name": "Loading.png",
         "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../../../Desktop/Tugas Sekolah/Game V.2/Asset/audio/SFX/sfx button-start(fix).mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "../../../Desktop/Tugas Sekolah/Game V.2/Asset/audio/SFX/sfx button-start(fix).mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "sfx button-ulang.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "sfx button-ulang.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ]
@@ -4879,6 +4817,26 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"GameStorage\"",
+                "\"SavingSystemLevel\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "GameStorage"
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusicOnChannel"
               },
               "parameters": [
@@ -4949,43 +4907,11 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Tween::HasFinished"
-              },
-              "parameters": [
-                "Shadow",
-                "Tween",
-                "\"Move_Scene\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Level Menu\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Animation",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5264,6 +5190,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Planet",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5480,6 +5407,17 @@
                 "1",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "FadeMusicVolume"
+              },
+              "parameters": [
+                "",
+                "1",
+                "0",
+                "0.5"
+              ]
             }
           ],
           "events": [
@@ -5620,6 +5558,39 @@
                     ""
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "Shadow",
+                "Tween",
+                "\"Move_Scene\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Level Menu\"",
+                ""
               ]
             }
           ]
@@ -8415,6 +8386,37 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"GameStorage\"",
+                "\"SavingSystemLevel\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "GameStorage"
+              ]
+            },
+            {
+              "type": {
+                "value": "FadeMusicVolume"
+              },
+              "parameters": [
+                "",
+                "1",
+                "GameStorage.Setelan[0]",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
@@ -8663,93 +8665,6 @@
                     "EllipseMovement",
                     "-6",
                     ""
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "GameStorage.LevelSelesai.Tambah.Level1",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "GameStorage.LevelSelesai.Kurang.Level1",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "GameStorage.LevelSelesai.Kali.Level1",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "GameStorage.LevelSelesai.Bagi.Level1",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "GameStorage.LevelSelesai.Tambah.Level2",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "GameStorage.LevelSelesai.Kurang.Level2",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "GameStorage.LevelSelesai.Bagi.Level2",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "GameStorage.LevelSelesai.Kali.Level2",
-                    "=",
-                    "1"
                   ]
                 }
               ]
@@ -9182,6 +9097,16 @@
                             "=",
                             "\"tambah\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
                         }
                       ]
                     },
@@ -9209,6 +9134,16 @@
                             "JenisOperasi",
                             "=",
                             "\"kurang\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
                           ]
                         }
                       ]
@@ -9238,6 +9173,16 @@
                             "=",
                             "\"kali\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
                         }
                       ]
                     },
@@ -9265,6 +9210,16 @@
                             "JenisOperasi",
                             "=",
                             "\"bagi\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
                           ]
                         }
                       ]
@@ -10639,6 +10594,27 @@
                     "=",
                     "\"1\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"GameStorage\"",
+                    "\"SavingSystemLevel\"",
+                    "ToJSON(GameStorage)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -10825,6 +10801,27 @@
                     "SubLevel",
                     "=",
                     "\"2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"GameStorage\"",
+                    "\"SavingSystemLevel\"",
+                    "ToJSON(GameStorage)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
                   ]
                 }
               ]
@@ -11013,6 +11010,27 @@
                     "=",
                     "\"3\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"GameStorage\"",
+                    "\"SavingSystemLevel\"",
+                    "ToJSON(GameStorage)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
                 }
               ]
             },
@@ -11181,6 +11199,17 @@
                     "\"easeOutQuad\"",
                     "1",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
                   ]
                 }
               ],
@@ -12245,22 +12274,6 @@
             }
           ],
           "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "DebuggerTools::ConsoleLog"
-              },
-              "parameters": [
-                "\"kebuka? \"+GameStorage.LevelSelesai.Kali.Level1",
-                "",
-                ""
-              ]
-            }
-          ]
         }
       ],
       "layers": [
@@ -13100,14 +13113,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
+          "customSize": true,
+          "depth": 0,
+          "height": 598,
           "layer": "GameOver",
           "name": "brd_GameOver",
           "persistentUuid": "cef96857-7721-456f-9960-be29fbf46ec3",
-          "width": 0,
-          "x": 370,
+          "width": 565,
+          "x": 357.5,
           "y": -750,
           "zOrder": 25,
           "numberProperties": [],
@@ -13270,6 +13283,22 @@
           "x": 427,
           "y": -565,
           "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "GameOver",
+          "name": "btnMenu",
+          "persistentUuid": "74c16731-4788-4103-8d09-1f2da0f71fee",
+          "width": 0,
+          "x": 20,
+          "y": 745,
+          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13507,6 +13536,90 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Planet Merah3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 50,
+                            "y": 390
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 291.5
+                          },
+                          {
+                            "x": 45,
+                            "y": 202
+                          },
+                          {
+                            "x": 85.5,
+                            "y": 127.5
+                          },
+                          {
+                            "x": 159,
+                            "y": 63
+                          },
+                          {
+                            "x": 279.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 369,
+                            "y": 47
+                          },
+                          {
+                            "x": 456,
+                            "y": 98
+                          },
+                          {
+                            "x": 519,
+                            "y": 192.5
+                          },
+                          {
+                            "x": 536,
+                            "y": 288.5
+                          },
+                          {
+                            "x": 514.5,
+                            "y": 394
+                          },
+                          {
+                            "x": 466.5,
+                            "y": 470.5
+                          },
+                          {
+                            "x": 383.5,
+                            "y": 523
+                          },
+                          {
+                            "x": 283.5,
+                            "y": 544
+                          },
+                          {
+                            "x": 184.5,
+                            "y": 525.5
+                          },
+                          {
+                            "x": 103,
+                            "y": 468.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -13614,11 +13727,95 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.2,
+                  "timeBetweenFrames": 1.5,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group264.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 50,
+                            "y": 390
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 291.5
+                          },
+                          {
+                            "x": 45,
+                            "y": 202
+                          },
+                          {
+                            "x": 85.5,
+                            "y": 127.5
+                          },
+                          {
+                            "x": 159,
+                            "y": 63
+                          },
+                          {
+                            "x": 279.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 369,
+                            "y": 47
+                          },
+                          {
+                            "x": 456,
+                            "y": 98
+                          },
+                          {
+                            "x": 519,
+                            "y": 192.5
+                          },
+                          {
+                            "x": 536,
+                            "y": 288.5
+                          },
+                          {
+                            "x": 514.5,
+                            "y": 394
+                          },
+                          {
+                            "x": 466.5,
+                            "y": 470.5
+                          },
+                          {
+                            "x": 383.5,
+                            "y": 523
+                          },
+                          {
+                            "x": 283.5,
+                            "y": 544
+                          },
+                          {
+                            "x": 184.5,
+                            "y": 525.5
+                          },
+                          {
+                            "x": 103,
+                            "y": 468.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group260.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -13891,6 +14088,90 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group259.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 50,
+                            "y": 390
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 291.5
+                          },
+                          {
+                            "x": 45,
+                            "y": 202
+                          },
+                          {
+                            "x": 85.5,
+                            "y": 127.5
+                          },
+                          {
+                            "x": 159,
+                            "y": 63
+                          },
+                          {
+                            "x": 279.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 369,
+                            "y": 47
+                          },
+                          {
+                            "x": 456,
+                            "y": 98
+                          },
+                          {
+                            "x": 519,
+                            "y": 192.5
+                          },
+                          {
+                            "x": 536,
+                            "y": 288.5
+                          },
+                          {
+                            "x": 514.5,
+                            "y": 394
+                          },
+                          {
+                            "x": 466.5,
+                            "y": 470.5
+                          },
+                          {
+                            "x": 383.5,
+                            "y": 523
+                          },
+                          {
+                            "x": 283.5,
+                            "y": 544
+                          },
+                          {
+                            "x": 184.5,
+                            "y": 525.5
+                          },
+                          {
+                            "x": 103,
+                            "y": 468.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -14003,6 +14284,90 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group266.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 50,
+                            "y": 390
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 291.5
+                          },
+                          {
+                            "x": 45,
+                            "y": 202
+                          },
+                          {
+                            "x": 85.5,
+                            "y": 127.5
+                          },
+                          {
+                            "x": 159,
+                            "y": 63
+                          },
+                          {
+                            "x": 279.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 369,
+                            "y": 47
+                          },
+                          {
+                            "x": 456,
+                            "y": 98
+                          },
+                          {
+                            "x": 519,
+                            "y": 192.5
+                          },
+                          {
+                            "x": 536,
+                            "y": 288.5
+                          },
+                          {
+                            "x": 514.5,
+                            "y": 394
+                          },
+                          {
+                            "x": 466.5,
+                            "y": 470.5
+                          },
+                          {
+                            "x": 383.5,
+                            "y": 523
+                          },
+                          {
+                            "x": 283.5,
+                            "y": 544
+                          },
+                          {
+                            "x": 184.5,
+                            "y": 525.5
+                          },
+                          {
+                            "x": 103,
+                            "y": 468.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 257.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -16468,6 +16833,26 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"GameStorage\"",
+                "\"SavingSystemLevel\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "GameStorage"
+              ]
+            },
+            {
+              "type": {
                 "value": "JSONResourceLoader::LoadJSONToVariable"
               },
               "parameters": [
@@ -16676,6 +17061,16 @@
                 "btnLanjut",
                 "ButtonFSM",
                 "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "btnMenu",
+                "ButtonFSM",
+                ""
               ]
             }
           ],
@@ -17140,6 +17535,16 @@
                     "PicuSoalBaru",
                     "=",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Nyawa",
+                    ">",
+                    "0"
                   ]
                 },
                 {
@@ -17752,7 +18157,7 @@
                   "parameters": [
                     "EnergyBall",
                     "Planet.AngleToObject(Meteor)",
-                    "1000",
+                    "1500",
                     "1"
                   ]
                 }
@@ -19135,17 +19540,6 @@
                       "subInstructions": [
                         {
                           "type": {
-                            "value": "SceneInstancesCount"
-                          },
-                          "parameters": [
-                            "",
-                            "Meteor",
-                            "=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "NumberVariable"
                           },
                           "parameters": [
@@ -19170,18 +19564,38 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                },
-                {
-                  "type": {
                     "value": "Layer"
                   },
                   "parameters": [
                     "btnLanjut",
                     "\"GameOver\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "Meteor",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -19286,7 +19700,7 @@
                     "Tween",
                     "\"GameOver\"",
                     "-90",
-                    "\"bouncePast\"",
+                    "\"easeInOutSine\"",
                     "1",
                     ""
                   ]
@@ -19415,6 +19829,20 @@
                     "\"easeInOutSine\"",
                     "1",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "Tween",
+                    "\"GameOver\"",
+                    "605",
+                    "\"easeInOutSine\"",
+                    "1",
+                    ""
                   ]
                 },
                 {
@@ -19748,6 +20176,156 @@
                         "425"
                       ]
                     }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "JenisOperasi",
+                            "=",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Tambah.Level1",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "JenisOperasi",
+                            "=",
+                            "\"kurang\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kurang.Level1",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "JenisOperasi",
+                            "=",
+                            "\"kali\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kali.Level1",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "JenisOperasi",
+                            "=",
+                            "\"bagi\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Bagi.Level1",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -19807,6 +20385,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "sfx button-ulang.mp3",
+                    "1",
+                    "",
+                    "GameStorage.Setelan[1]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
@@ -19816,6 +20407,47 @@
                     "255",
                     "\"easeOutQuad\"",
                     "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnUlang",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
                     ""
                   ]
                 }
@@ -19928,6 +20560,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "sfx button-level.mp3",
+                    "1",
+                    "",
+                    "GameStorage.Setelan[1]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
@@ -19937,6 +20582,47 @@
                     "255",
                     "\"easeOutQuad\"",
                     "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnUlang",
+                    "ButtonFSM",
                     ""
                   ]
                 }
@@ -19966,6 +20652,16 @@
                         "=",
                         "\"2\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
+                      ]
                     }
                   ]
                 },
@@ -19992,6 +20688,16 @@
                         "SubLevel",
                         "=",
                         "\"2\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -20020,6 +20726,16 @@
                         "=",
                         "\"2\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
+                      ]
                     }
                   ]
                 },
@@ -20046,6 +20762,16 @@
                         "SubLevel",
                         "=",
                         "\"2\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -20080,6 +20806,181 @@
                   "parameters": [
                     "",
                     "\"Level 2\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "brd_GameOver",
+                    "Tween",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Dark",
+                    "Tween",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "sfx button-back.ogg",
+                    "1",
+                    "",
+                    "GameStorage.Setelan[1]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Shadow",
+                    "Tween",
+                    "\"Endmenu\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnUlang",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Shadow",
+                    "Tween",
+                    "\"Endmenu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Main Menu\"",
                     ""
                   ]
                 }
@@ -20682,6 +21583,26 @@
                     "1",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -20694,6 +21615,15 @@
                       },
                       "parameters": [
                         "btnLanjut",
+                        "\"Setting Pop Up\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Layer"
+                      },
+                      "parameters": [
+                        "btnMenu",
                         "\"Setting Pop Up\""
                       ]
                     }
@@ -20961,6 +21891,15 @@
                 },
                 {
                   "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "\"Setting Pop Up\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -21141,6 +22080,37 @@
                     "\"easeInOutQuad\"",
                     "1",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    "yes"
                   ]
                 }
               ]
@@ -21752,7 +22722,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.311197494244521,
+        "zoomFactor": 0.3216911764705895,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -22352,14 +23322,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
+          "customSize": true,
+          "depth": 0,
+          "height": 598,
           "layer": "GameOver",
           "name": "brd_GameOver",
           "persistentUuid": "9ea6aabb-f822-481a-a2b6-f617e4c68e35",
-          "width": 0,
-          "x": 370,
+          "width": 565,
+          "x": 357.5,
           "y": -750,
           "zOrder": 25,
           "numberProperties": [],
@@ -22423,7 +23393,7 @@
           "name": "WaktuHasil",
           "persistentUuid": "851dc14d-ed88-44bd-ba94-e9162db0fbce",
           "width": 0,
-          "x": 615,
+          "x": 618,
           "y": -372,
           "zOrder": 29,
           "numberProperties": [],
@@ -22490,6 +23460,22 @@
           "x": 427,
           "y": -565,
           "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "GameOver",
+          "name": "btnMenu",
+          "persistentUuid": "4a3b2ed8-43f0-4c72-9e6b-affba7e6cf37",
+          "width": 0,
+          "x": 20,
+          "y": 745,
+          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -22727,6 +23713,90 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Planet Merah5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 51.5,
+                            "y": 263.5
+                          },
+                          {
+                            "x": 34.5,
+                            "y": 217
+                          },
+                          {
+                            "x": 32.5,
+                            "y": 158
+                          },
+                          {
+                            "x": 57,
+                            "y": 94.5
+                          },
+                          {
+                            "x": 99.5,
+                            "y": 55.5
+                          },
+                          {
+                            "x": 165,
+                            "y": 29
+                          },
+                          {
+                            "x": 235.5,
+                            "y": 42
+                          },
+                          {
+                            "x": 294.5,
+                            "y": 77
+                          },
+                          {
+                            "x": 323.5,
+                            "y": 131.5
+                          },
+                          {
+                            "x": 335.5,
+                            "y": 182
+                          },
+                          {
+                            "x": 326,
+                            "y": 241
+                          },
+                          {
+                            "x": 296.5,
+                            "y": 296.5
+                          },
+                          {
+                            "x": 241,
+                            "y": 333
+                          },
+                          {
+                            "x": 186.5,
+                            "y": 342.5
+                          },
+                          {
+                            "x": 130,
+                            "y": 334.5
+                          },
+                          {
+                            "x": 73,
+                            "y": 302
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -22834,11 +23904,95 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.2,
+                  "timeBetweenFrames": 1.5,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group346.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 51.5,
+                            "y": 263.5
+                          },
+                          {
+                            "x": 34.5,
+                            "y": 217
+                          },
+                          {
+                            "x": 32.5,
+                            "y": 158
+                          },
+                          {
+                            "x": 57,
+                            "y": 94.5
+                          },
+                          {
+                            "x": 99.5,
+                            "y": 55.5
+                          },
+                          {
+                            "x": 165,
+                            "y": 29
+                          },
+                          {
+                            "x": 235.5,
+                            "y": 42
+                          },
+                          {
+                            "x": 294.5,
+                            "y": 77
+                          },
+                          {
+                            "x": 323.5,
+                            "y": 131.5
+                          },
+                          {
+                            "x": 335.5,
+                            "y": 182
+                          },
+                          {
+                            "x": 326,
+                            "y": 241
+                          },
+                          {
+                            "x": 296.5,
+                            "y": 296.5
+                          },
+                          {
+                            "x": 241,
+                            "y": 333
+                          },
+                          {
+                            "x": 186.5,
+                            "y": 342.5
+                          },
+                          {
+                            "x": 130,
+                            "y": 334.5
+                          },
+                          {
+                            "x": 73,
+                            "y": 302
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group345.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -23111,6 +24265,90 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group348.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 51.5,
+                            "y": 263.5
+                          },
+                          {
+                            "x": 34.5,
+                            "y": 217
+                          },
+                          {
+                            "x": 32.5,
+                            "y": 158
+                          },
+                          {
+                            "x": 57,
+                            "y": 94.5
+                          },
+                          {
+                            "x": 99.5,
+                            "y": 55.5
+                          },
+                          {
+                            "x": 165,
+                            "y": 29
+                          },
+                          {
+                            "x": 235.5,
+                            "y": 42
+                          },
+                          {
+                            "x": 294.5,
+                            "y": 77
+                          },
+                          {
+                            "x": 323.5,
+                            "y": 131.5
+                          },
+                          {
+                            "x": 335.5,
+                            "y": 182
+                          },
+                          {
+                            "x": 326,
+                            "y": 241
+                          },
+                          {
+                            "x": 296.5,
+                            "y": 296.5
+                          },
+                          {
+                            "x": 241,
+                            "y": 333
+                          },
+                          {
+                            "x": 186.5,
+                            "y": 342.5
+                          },
+                          {
+                            "x": 130,
+                            "y": 334.5
+                          },
+                          {
+                            "x": 73,
+                            "y": 302
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -23223,6 +24461,90 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group352.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 51.5,
+                            "y": 263.5
+                          },
+                          {
+                            "x": 34.5,
+                            "y": 217
+                          },
+                          {
+                            "x": 32.5,
+                            "y": 158
+                          },
+                          {
+                            "x": 57,
+                            "y": 94.5
+                          },
+                          {
+                            "x": 99.5,
+                            "y": 55.5
+                          },
+                          {
+                            "x": 165,
+                            "y": 29
+                          },
+                          {
+                            "x": 235.5,
+                            "y": 42
+                          },
+                          {
+                            "x": 294.5,
+                            "y": 77
+                          },
+                          {
+                            "x": 323.5,
+                            "y": 131.5
+                          },
+                          {
+                            "x": 335.5,
+                            "y": 182
+                          },
+                          {
+                            "x": 326,
+                            "y": 241
+                          },
+                          {
+                            "x": 296.5,
+                            "y": 296.5
+                          },
+                          {
+                            "x": 241,
+                            "y": 333
+                          },
+                          {
+                            "x": 186.5,
+                            "y": 342.5
+                          },
+                          {
+                            "x": 130,
+                            "y": 334.5
+                          },
+                          {
+                            "x": 73,
+                            "y": 302
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group351.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -25741,6 +27063,26 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"GameStorage\"",
+                "\"SavingSystemLevel\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "GameStorage"
+              ]
+            },
+            {
+              "type": {
                 "value": "JSONResourceLoader::LoadJSONToVariable"
               },
               "parameters": [
@@ -25949,6 +27291,16 @@
                 "btnLanjut",
                 "ButtonFSM",
                 "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "btnMenu",
+                "ButtonFSM",
+                ""
               ]
             }
           ],
@@ -26413,6 +27765,16 @@
                     "PicuSoalBaru",
                     "=",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Nyawa",
+                    ">",
+                    "0"
                   ]
                 },
                 {
@@ -28475,17 +29837,6 @@
                       "subInstructions": [
                         {
                           "type": {
-                            "value": "SceneInstancesCount"
-                          },
-                          "parameters": [
-                            "",
-                            "Meteor",
-                            "=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "NumberVariable"
                           },
                           "parameters": [
@@ -28510,18 +29861,38 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                },
-                {
-                  "type": {
                     "value": "Layer"
                   },
                   "parameters": [
                     "btnLanjut",
                     "\"GameOver\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "Meteor",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -28755,6 +30126,20 @@
                     "\"easeInOutSine\"",
                     "1",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "Tween",
+                    "\"GameOver\"",
+                    "605",
+                    "\"easeInOutSine\"",
+                    "1",
+                    ""
                   ]
                 },
                 {
@@ -29088,6 +30473,156 @@
                         "425"
                       ]
                     }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "JenisOperasi",
+                            "=",
+                            "\"tambah\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Tambah.Level2",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "JenisOperasi",
+                            "=",
+                            "\"kurang\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kurang.Level2",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "JenisOperasi",
+                            "=",
+                            "\"kali\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Bagi.Level2",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "StringVariable"
+                          },
+                          "parameters": [
+                            "JenisOperasi",
+                            "=",
+                            "\"bagi\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "GameStorage.LevelSelesai.Kali.Level2",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "EcrireFichierTxt"
+                          },
+                          "parameters": [
+                            "\"GameStorage\"",
+                            "\"SavingSystemLevel\"",
+                            "ToJSON(GameStorage)"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -29147,6 +30682,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "sfx button-ulang.mp3",
+                    "1",
+                    "",
+                    "GameStorage.Setelan[1]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
@@ -29156,6 +30704,47 @@
                     "255",
                     "\"easeOutQuad\"",
                     "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnUlang",
+                    "ButtonFSM",
                     ""
                   ]
                 }
@@ -29188,7 +30777,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Level 1\"",
+                    "\"Level 2\"",
                     ""
                   ]
                 }
@@ -29268,6 +30857,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "sfx button-level.mp3",
+                    "1",
+                    "",
+                    "GameStorage.Setelan[1]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
@@ -29277,6 +30879,47 @@
                     "255",
                     "\"easeOutQuad\"",
                     "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnUlang",
+                    "ButtonFSM",
                     ""
                   ]
                 }
@@ -29304,7 +30947,17 @@
                       "parameters": [
                         "SubLevel",
                         "=",
-                        "\"2\""
+                        "\"3\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -29331,7 +30984,17 @@
                       "parameters": [
                         "SubLevel",
                         "=",
-                        "\"2\""
+                        "\"3\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -29358,7 +31021,17 @@
                       "parameters": [
                         "SubLevel",
                         "=",
-                        "\"2\""
+                        "\"3\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -29385,7 +31058,17 @@
                       "parameters": [
                         "SubLevel",
                         "=",
-                        "\"2\""
+                        "\"3\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -29419,7 +31102,182 @@
                   },
                   "parameters": [
                     "",
-                    "\"Level 2\"",
+                    "\"Level 3\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "brd_GameOver",
+                    "Tween",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Dark",
+                    "Tween",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "sfx button-back.ogg",
+                    "1",
+                    "",
+                    "GameStorage.Setelan[1]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Shadow",
+                    "Tween",
+                    "\"Endmenu\"",
+                    "255",
+                    "\"easeOutQuad\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnUlang",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Shadow",
+                    "Tween",
+                    "\"Endmenu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Main Menu\"",
                     ""
                   ]
                 }
@@ -30002,6 +31860,26 @@
                     "1",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -30014,6 +31892,15 @@
                       },
                       "parameters": [
                         "btnLanjut",
+                        "\"Setting Pop Up\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Layer"
+                      },
+                      "parameters": [
+                        "btnMenu",
                         "\"Setting Pop Up\""
                       ]
                     }
@@ -30281,6 +32168,15 @@
                 },
                 {
                   "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "\"Setting Pop Up\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -30441,6 +32337,37 @@
                     "\"easeInOutQuad\"",
                     "1",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    "yes"
                   ]
                 }
               ]
@@ -31673,14 +33600,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
+          "customSize": true,
+          "depth": 0,
+          "height": 598,
           "layer": "GameOver",
           "name": "brd_GameOver",
           "persistentUuid": "1a0e8dc5-67be-4564-b9da-d89a337aba68",
-          "width": 0,
-          "x": 370,
+          "width": 565,
+          "x": 357.5,
           "y": -750,
           "zOrder": 25,
           "numberProperties": [],
@@ -31699,22 +33626,6 @@
           "x": 420,
           "y": -292,
           "zOrder": 26,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "GameOver",
-          "name": "btnLanjut",
-          "persistentUuid": "b0cbf01c-88cb-485b-88fa-c89ce0a8bf1c",
-          "width": 0,
-          "x": 643,
-          "y": -292,
-          "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -31827,6 +33738,38 @@
           "x": 645,
           "y": -156,
           "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "GameOver",
+          "name": "btnMenu",
+          "persistentUuid": "e5b66ff1-e708-4de1-ace5-7c595b4270d5",
+          "width": 0,
+          "x": 643,
+          "y": -292,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "GameOver",
+          "name": "btnMenu",
+          "persistentUuid": "3b144edc-44bb-45c9-afeb-d77c521220bb",
+          "width": 0,
+          "x": 20,
+          "y": 745,
+          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -32064,6 +34007,90 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Planet Merah6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 36,
+                            "y": 175
+                          },
+                          {
+                            "x": 30.5,
+                            "y": 132.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 94.5
+                          },
+                          {
+                            "x": 64,
+                            "y": 60.5
+                          },
+                          {
+                            "x": 89.5,
+                            "y": 40
+                          },
+                          {
+                            "x": 133.5,
+                            "y": 31
+                          },
+                          {
+                            "x": 172,
+                            "y": 40
+                          },
+                          {
+                            "x": 207,
+                            "y": 64.5
+                          },
+                          {
+                            "x": 228,
+                            "y": 100.5
+                          },
+                          {
+                            "x": 235,
+                            "y": 141.5
+                          },
+                          {
+                            "x": 225.5,
+                            "y": 181.5
+                          },
+                          {
+                            "x": 207,
+                            "y": 211
+                          },
+                          {
+                            "x": 170.5,
+                            "y": 236
+                          },
+                          {
+                            "x": 131,
+                            "y": 244
+                          },
+                          {
+                            "x": 92,
+                            "y": 235
+                          },
+                          {
+                            "x": 56.5,
+                            "y": 209.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -32171,11 +34198,95 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.2,
+                  "timeBetweenFrames": 1.5,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group 354.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 36,
+                            "y": 175
+                          },
+                          {
+                            "x": 30.5,
+                            "y": 132.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 94.5
+                          },
+                          {
+                            "x": 64,
+                            "y": 60.5
+                          },
+                          {
+                            "x": 89.5,
+                            "y": 40
+                          },
+                          {
+                            "x": 133.5,
+                            "y": 31
+                          },
+                          {
+                            "x": 172,
+                            "y": 40
+                          },
+                          {
+                            "x": 207,
+                            "y": 64.5
+                          },
+                          {
+                            "x": 228,
+                            "y": 100.5
+                          },
+                          {
+                            "x": 235,
+                            "y": 141.5
+                          },
+                          {
+                            "x": 225.5,
+                            "y": 181.5
+                          },
+                          {
+                            "x": 207,
+                            "y": 211
+                          },
+                          {
+                            "x": 170.5,
+                            "y": 236
+                          },
+                          {
+                            "x": 131,
+                            "y": 244
+                          },
+                          {
+                            "x": 92,
+                            "y": 235
+                          },
+                          {
+                            "x": 56.5,
+                            "y": 209.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 353.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -32448,6 +34559,90 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 356.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 36,
+                            "y": 175
+                          },
+                          {
+                            "x": 30.5,
+                            "y": 132.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 94.5
+                          },
+                          {
+                            "x": 64,
+                            "y": 60.5
+                          },
+                          {
+                            "x": 89.5,
+                            "y": 40
+                          },
+                          {
+                            "x": 133.5,
+                            "y": 31
+                          },
+                          {
+                            "x": 172,
+                            "y": 40
+                          },
+                          {
+                            "x": 207,
+                            "y": 64.5
+                          },
+                          {
+                            "x": 228,
+                            "y": 100.5
+                          },
+                          {
+                            "x": 235,
+                            "y": 141.5
+                          },
+                          {
+                            "x": 225.5,
+                            "y": 181.5
+                          },
+                          {
+                            "x": 207,
+                            "y": 211
+                          },
+                          {
+                            "x": 170.5,
+                            "y": 236
+                          },
+                          {
+                            "x": 131,
+                            "y": 244
+                          },
+                          {
+                            "x": 92,
+                            "y": 235
+                          },
+                          {
+                            "x": 56.5,
+                            "y": 209.5
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -32560,6 +34755,90 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Group 360.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 36,
+                            "y": 175
+                          },
+                          {
+                            "x": 30.5,
+                            "y": 132.5
+                          },
+                          {
+                            "x": 38.5,
+                            "y": 94.5
+                          },
+                          {
+                            "x": 64,
+                            "y": 60.5
+                          },
+                          {
+                            "x": 89.5,
+                            "y": 40
+                          },
+                          {
+                            "x": 133.5,
+                            "y": 31
+                          },
+                          {
+                            "x": 172,
+                            "y": 40
+                          },
+                          {
+                            "x": 207,
+                            "y": 64.5
+                          },
+                          {
+                            "x": 228,
+                            "y": 100.5
+                          },
+                          {
+                            "x": 235,
+                            "y": 141.5
+                          },
+                          {
+                            "x": 225.5,
+                            "y": 181.5
+                          },
+                          {
+                            "x": 207,
+                            "y": 211
+                          },
+                          {
+                            "x": 170.5,
+                            "y": 236
+                          },
+                          {
+                            "x": 131,
+                            "y": 244
+                          },
+                          {
+                            "x": 92,
+                            "y": 235
+                          },
+                          {
+                            "x": 56.5,
+                            "y": 209.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 359.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -35100,6 +37379,26 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"GameStorage\"",
+                "\"SavingSystemLevel\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "GameStorage"
+              ]
+            },
+            {
+              "type": {
                 "value": "JSONResourceLoader::LoadJSONToVariable"
               },
               "parameters": [
@@ -35308,6 +37607,16 @@
                 "btnLanjut",
                 "ButtonFSM",
                 "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "btnMenu",
+                "ButtonFSM",
+                ""
               ]
             }
           ],
@@ -35783,6 +38092,16 @@
                     "PicuSoalBaru",
                     "=",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Nyawa",
+                    ">",
+                    "0"
                   ]
                 },
                 {
@@ -37944,17 +40263,6 @@
                       "subInstructions": [
                         {
                           "type": {
-                            "value": "SceneInstancesCount"
-                          },
-                          "parameters": [
-                            "",
-                            "Meteor",
-                            "=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "NumberVariable"
                           },
                           "parameters": [
@@ -37979,18 +40287,38 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                },
-                {
-                  "type": {
                     "value": "Layer"
                   },
                   "parameters": [
                     "btnLanjut",
                     "\"GameOver\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "\"GameOver\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "Meteor",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -38224,6 +40552,20 @@
                     "\"easeInOutSine\"",
                     "1",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "Tween",
+                    "\"GameOver\"",
+                    "605",
+                    "\"easeInOutSine\"",
+                    "1",
+                    ""
                   ]
                 },
                 {
@@ -38616,6 +40958,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "sfx button-ulang.mp3",
+                    "1",
+                    "",
+                    "GameStorage.Setelan[1]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
@@ -38625,6 +40980,37 @@
                     "255",
                     "\"easeOutQuad\"",
                     "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnUlang",
+                    "ButtonFSM",
                     ""
                   ]
                 }
@@ -38657,7 +41043,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Level 1\"",
+                    "\"Level 3\"",
                     ""
                   ]
                 }
@@ -38683,7 +41069,7 @@
                     "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
                   "parameters": [
-                    "btnLanjut",
+                    "btnMenu",
                     "ButtonFSM",
                     ""
                   ]
@@ -38693,10 +41079,10 @@
                     "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
-                    "btnLanjut",
+                    "btnMenu",
                     "Animation",
                     "=",
-                    "\"lanjut\""
+                    "\"menu\""
                   ]
                 },
                 {
@@ -38724,7 +41110,7 @@
                     "value": "Visible"
                   },
                   "parameters": [
-                    "btnLanjut"
+                    "btnMenu"
                   ]
                 },
                 {
@@ -38737,6 +41123,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundOnChannel"
+                  },
+                  "parameters": [
+                    "",
+                    "sfx button-ulang.mp3",
+                    "1",
+                    "",
+                    "GameStorage.Setelan[1]",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
@@ -38746,6 +41145,37 @@
                     "255",
                     "\"easeOutQuad\"",
                     "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnUlang",
+                    "ButtonFSM",
                     ""
                   ]
                 }
@@ -38773,7 +41203,17 @@
                       "parameters": [
                         "SubLevel",
                         "=",
-                        "\"2\""
+                        "\"3\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -38800,7 +41240,17 @@
                       "parameters": [
                         "SubLevel",
                         "=",
-                        "\"2\""
+                        "\"3\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -38827,7 +41277,17 @@
                       "parameters": [
                         "SubLevel",
                         "=",
-                        "\"2\""
+                        "\"3\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -38854,7 +41314,17 @@
                       "parameters": [
                         "SubLevel",
                         "=",
-                        "\"2\""
+                        "\"3\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"GameStorage\"",
+                        "\"SavingSystemLevel\"",
+                        "ToJSON(GameStorage)"
                       ]
                     }
                   ]
@@ -38888,7 +41358,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Level 2\"",
+                    "\"Main Menu\"",
                     ""
                   ]
                 }
@@ -39471,6 +41941,26 @@
                     "1",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -39483,6 +41973,15 @@
                       },
                       "parameters": [
                         "btnLanjut",
+                        "\"Setting Pop Up\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Layer"
+                      },
+                      "parameters": [
+                        "btnMenu",
                         "\"Setting Pop Up\""
                       ]
                     }
@@ -39750,6 +42249,15 @@
                 },
                 {
                   "type": {
+                    "value": "Layer"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "\"Setting Pop Up\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -39910,6 +42418,37 @@
                     "\"easeInOutQuad\"",
                     "1",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "0",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnMenu",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "btnLanjut",
+                    "ButtonFSM",
+                    "yes"
                   ]
                 }
               ]
