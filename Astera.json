@@ -5350,7 +5350,6 @@
           "parameters": []
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5406,17 +5405,6 @@
                 "\"easeOutQuad\"",
                 "1",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FadeMusicVolume"
-              },
-              "parameters": [
-                "",
-                "1",
-                "0",
-                "0.5"
               ]
             }
           ],
@@ -8107,7 +8095,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Stars",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8402,17 +8389,6 @@
               "parameters": [
                 "temp",
                 "GameStorage"
-              ]
-            },
-            {
-              "type": {
-                "value": "FadeMusicVolume"
-              },
-              "parameters": [
-                "",
-                "1",
-                "GameStorage.Setelan[0]",
-                "0.5"
               ]
             },
             {
@@ -10604,17 +10580,6 @@
                     "\"SavingSystemLevel\"",
                     "ToJSON(GameStorage)"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "1"
-                  ]
                 }
               ]
             },
@@ -10811,17 +10776,6 @@
                     "\"GameStorage\"",
                     "\"SavingSystemLevel\"",
                     "ToJSON(GameStorage)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
                   ]
                 }
               ]
@@ -11020,17 +10974,6 @@
                     "\"SavingSystemLevel\"",
                     "ToJSON(GameStorage)"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
-                  ]
                 }
               ]
             },
@@ -11199,17 +11142,6 @@
                     "\"easeOutQuad\"",
                     "1",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
                   ]
                 }
               ],
@@ -20412,17 +20344,6 @@
                 },
                 {
                   "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
@@ -20583,17 +20504,6 @@
                     "\"easeOutQuad\"",
                     "1",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
                   ]
                 },
                 {
@@ -20912,17 +20822,6 @@
                 },
                 {
                   "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
@@ -20994,7 +20893,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Stars",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22080,17 +21978,6 @@
                     "\"easeInOutQuad\"",
                     "1",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
                   ]
                 },
                 {
@@ -30709,17 +30596,6 @@
                 },
                 {
                   "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
@@ -30880,17 +30756,6 @@
                     "\"easeOutQuad\"",
                     "1",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
                   ]
                 },
                 {
@@ -31205,17 +31070,6 @@
                     "\"easeOutQuad\"",
                     "1",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
                   ]
                 },
                 {
@@ -32337,17 +32191,6 @@
                     "\"easeInOutQuad\"",
                     "1",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
                   ]
                 },
                 {
@@ -37399,17 +37242,6 @@
             },
             {
               "type": {
-                "value": "JSONResourceLoader::LoadJSONToVariable"
-              },
-              "parameters": [
-                "",
-                "seluruh operasi level kabataku.json",
-                "GameStorage.GameData",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "PlayMusicOnChannel"
               },
               "parameters": [
@@ -37492,6 +37324,17 @@
               "parameters": [
                 "Meteor",
                 "DestroyOutside",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONResourceLoader::LoadJSONToVariable"
+              },
+              "parameters": [
+                "",
+                "seluruh operasi level kabataku.json",
+                "GameStorage.GameData",
                 ""
               ]
             },
@@ -40985,17 +40828,6 @@
                 },
                 {
                   "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
@@ -41146,17 +40978,6 @@
                     "\"easeOutQuad\"",
                     "1",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "0.5"
                   ]
                 },
                 {
@@ -42418,17 +42239,6 @@
                     "\"easeInOutQuad\"",
                     "1",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "0",
-                    "1"
                   ]
                 },
                 {
