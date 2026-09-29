@@ -8095,6 +8095,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Stars",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9497,6 +9498,7 @@
               "comment": ""
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -10135,7 +10137,7 @@
                           "parameters": [
                             "GameStorage.LevelSelesai.Kali.Level2",
                             "=",
-                            "1"
+                            "0"
                           ]
                         }
                       ],
@@ -18084,12 +18086,12 @@
                 },
                 {
                   "type": {
-                    "value": "AddForceAL"
+                    "value": "AddForceTowardObject"
                   },
                   "parameters": [
                     "EnergyBall",
-                    "Planet.AngleToObject(Meteor)",
-                    "1500",
+                    "Meteor",
+                    "1000",
                     "1"
                   ]
                 }
@@ -18259,6 +18261,7 @@
               "comment": "Jawaban Benar"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -18431,43 +18434,263 @@
                     "=",
                     "\"Skor: \" + Skor"
                   ]
-                },
+                }
+              ],
+              "events": [
                 {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "StatusGame",
-                    "=",
-                    "\"meluncur\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"tambah\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"123;90;199\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "+",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"kurang\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"217;79;92\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1.5"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"kali\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"85;168;107\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "PicuSoalBaru",
-                    "=",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"bagi\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"255;138;76\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -28336,11 +28559,11 @@
                 },
                 {
                   "type": {
-                    "value": "AddForceAL"
+                    "value": "AddForceTowardObject"
                   },
                   "parameters": [
                     "EnergyBall",
-                    "Planet.AngleToObject(Meteor)",
+                    "Meteor",
                     "1000",
                     "1"
                   ]
@@ -28511,6 +28734,7 @@
               "comment": "Jawaban Benar"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -28683,43 +28907,263 @@
                     "=",
                     "\"Skor: \" + Skor"
                   ]
-                },
+                }
+              ],
+              "events": [
                 {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "StatusGame",
-                    "=",
-                    "\"meluncur\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"tambah\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"123;90;199\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "+",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"kurang\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"217;79;92\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1.5"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"kali\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"85;168;107\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "PicuSoalBaru",
-                    "=",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"bagi\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"255;138;76\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -37776,6 +38220,27 @@
                     "2",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "txtQuestions",
+                    "Text",
+                    "=",
+                    "\"?? ÷ ? = ?\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "txtQuestions",
+                    "=",
+                    "(1280/2) - (txtQuestions.Width()/2)"
+                  ]
                 }
               ]
             },
@@ -37877,6 +38342,16 @@
                     "Text",
                     "=",
                     "\"?? ÷ ? = ?\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetX"
+                  },
+                  "parameters": [
+                    "txtQuestions",
+                    "=",
+                    "(1280/2) - (txtQuestions.Width()/2)"
                   ]
                 }
               ]
@@ -38541,7 +39016,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -38681,11 +39155,11 @@
                 },
                 {
                   "type": {
-                    "value": "AddForceAL"
+                    "value": "AddForceTowardObject"
                   },
                   "parameters": [
                     "EnergyBall",
-                    "Planet.AngleToObject(Meteor)",
+                    "Meteor",
                     "1000",
                     "1"
                   ]
@@ -39028,43 +39502,263 @@
                     "=",
                     "\"Skor: \" + Skor"
                   ]
-                },
+                }
+              ],
+              "events": [
                 {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "StatusGame",
-                    "=",
-                    "\"meluncur\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"tambah\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"123;90;199\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Counter",
-                    "+",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"kurang\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"217;79;92\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "1.5"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"kali\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"85;168;107\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "PicuSoalBaru",
-                    "=",
-                    "1"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringVariable"
+                      },
+                      "parameters": [
+                        "JenisOperasi",
+                        "=",
+                        "\"bagi\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ParticleSystem::ParticleColor1"
+                      },
+                      "parameters": [
+                        "Explosion3",
+                        "\"255;138;76\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "StatusGame",
+                        "=",
+                        "\"meluncur\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Counter",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PicuSoalBaru",
+                        "=",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
