@@ -25,7 +25,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "C:\\Users\\Naufal\\Desktop\\Tugas Sekolah\\Game V.2\\Web App",
+    "latestCompilationDirectory": "C:\\Users\\Naufal\\Desktop\\Tugas Sekolah\\Game V.2\\Platform Desktop",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -19712,6 +19712,17 @@
                             ">=",
                             "3"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "",
+                            "Meteor",
+                            "=",
+                            "0"
+                          ]
                         }
                       ]
                     }
@@ -19733,17 +19744,6 @@
                   "parameters": [
                     "btnMenu",
                     "\"GameOver\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneInstancesCount"
-                  },
-                  "parameters": [
-                    "",
-                    "Meteor",
-                    "=",
-                    "0"
                   ]
                 },
                 {
@@ -19806,6 +19806,16 @@
                 },
                 {
                   "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Meteor",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
                   },
                   "parameters": [
@@ -19824,6 +19834,20 @@
                   },
                   "parameters": [
                     "Meteor",
+                    "Tween",
+                    "\"GameOver\"",
+                    "0",
+                    "\"easeInOutSine\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "txtOptions",
                     "Tween",
                     "\"GameOver\"",
                     "0",
@@ -30244,20 +30268,20 @@
                             ">=",
                             "3"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "",
+                            "Meteor",
+                            "=",
+                            "0"
+                          ]
                         }
                       ]
                     }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneInstancesCount"
-                  },
-                  "parameters": [
-                    "",
-                    "Meteor",
-                    "=",
-                    "0"
                   ]
                 },
                 {
@@ -30320,6 +30344,16 @@
                 },
                 {
                   "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Meteor",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
@@ -30338,6 +30372,20 @@
                   },
                   "parameters": [
                     "Meteor",
+                    "Tween",
+                    "\"GameOver\"",
+                    "0",
+                    "\"easeInOutSine\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "txtOptions",
                     "Tween",
                     "\"GameOver\"",
                     "0",
@@ -33307,7 +33355,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3797121001947942,
+        "zoomFactor": 0.311197494244521,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -34082,22 +34130,6 @@
           "x": 643,
           "y": -292,
           "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "GameOver",
-          "name": "btnMenu",
-          "persistentUuid": "3b144edc-44bb-45c9-afeb-d77c521220bb",
-          "width": 0,
-          "x": 20,
-          "y": 745,
-          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -37917,15 +37949,6 @@
                 "1",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "btnMenu",
-                ""
-              ]
             }
           ],
           "events": [
@@ -40835,6 +40858,17 @@
                             ">=",
                             "3"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "",
+                            "Meteor",
+                            "=",
+                            "0"
+                          ]
                         }
                       ]
                     }
@@ -40847,17 +40881,6 @@
                   "parameters": [
                     "btnMenu",
                     "\"GameOver\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneInstancesCount"
-                  },
-                  "parameters": [
-                    "",
-                    "Meteor",
-                    "=",
-                    "0"
                   ]
                 },
                 {
@@ -40920,6 +40943,16 @@
                 },
                 {
                   "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Meteor",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
@@ -40938,6 +40971,20 @@
                   },
                   "parameters": [
                     "Meteor",
+                    "Tween",
+                    "\"GameOver\"",
+                    "0",
+                    "\"easeInOutSine\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "txtOptions",
                     "Tween",
                     "\"GameOver\"",
                     "0",
@@ -41077,20 +41124,6 @@
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
-                    "btnLanjut",
-                    "Tween",
-                    "\"GameOver\"",
-                    "520",
-                    "\"easeInOutSine\"",
-                    "1",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
                     "btnUlang",
                     "Tween",
                     "\"GameOver\"",
@@ -41108,7 +41141,7 @@
                     "btnMenu",
                     "Tween",
                     "\"GameOver\"",
-                    "605",
+                    "520",
                     "\"easeInOutSine\"",
                     "1",
                     ""
@@ -41316,133 +41349,6 @@
                         "TitleLevel",
                         "=",
                         "(1280/2) - (TitleLevel.Width()/2)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "Waktu",
-                            "<=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "Nyawa",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Hide"
-                      },
-                      "parameters": [
-                        "btnMenu"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "btnMenu",
-                        "ButtonFSM",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetX"
-                      },
-                      "parameters": [
-                        "btnUlang",
-                        "=",
-                        "537"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Or"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "Counter",
-                            ">=",
-                            "TotalSoalDimainkan"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "JawabanBenar",
-                            ">=",
-                            "3"
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Show"
-                      },
-                      "parameters": [
-                        "btnMenu",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "btnMenu",
-                        "ButtonFSM",
-                        "yes"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetX"
-                      },
-                      "parameters": [
-                        "btnUlang",
-                        "=",
-                        "425"
                       ]
                     }
                   ]
